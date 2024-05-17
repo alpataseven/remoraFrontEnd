@@ -1,0 +1,150 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <p id="paragraph">This is a sample paragraph.</p>
+
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('tr')">Türkçe</button>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Hello, World!",
+                paragraph: "This is a sample paragraph."
+            },
+            tr: {
+                title: "Merhaba, Dünya!",
+                paragraph: "Bu bir örnek paragraftır."
+            }
+        };
+
+        function changeLanguage(language) {
+            document.getElementById('title').textContent = translations[language].title;
+            document.getElementById('paragraph').textContent = translations[language].paragraph;
+        }
+
+    </script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #openVideoBtn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #openVideoBtn:hover {
+            background-color: #0056b3;
+        }
+
+        #videoContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 500;
+        }
+
+        #closeVideoBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s;
+        }
+
+        #closeVideoBtn:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <button id="openVideoBtn">Videoyu Aç</button>
+
+    <div id="overlay"></div>
+    <div id="videoContainer">
+        <button id="closeVideoBtn">&times;</button>
+        <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        const openVideoBtn = document.getElementById('openVideoBtn');
+        const closeVideoBtn = document.getElementById('closeVideoBtn');
+        const overlay = document.getElementById('overlay');
+        const videoContainer = document.getElementById('videoContainer');
+        const youtubeVideo = document.getElementById('youtubeVideo');
+
+        openVideoBtn.addEventListener('click', () => {
+            youtubeVideo.src = "https://www.youtube.com/embed/VIDEO_ID"; // Replace VIDEO_ID with your video id
+            overlay.style.display = 'block';
+            videoContainer.style.display = 'block';
+        });
+
+        closeVideoBtn.addEventListener('click', () => {
+            youtubeVideo.src = "";
+            overlay.style.display = 'none';
+            videoContainer.style.display = 'none';
+        });
+
+        overlay.addEventListener('click', () => {
+            youtubeVideo.src = "";
+            overlay.style.display = 'none';
+            videoContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+

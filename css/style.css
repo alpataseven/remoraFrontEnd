@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Navbar*/
+
+header {
+    width: auto;
+    height: 100vh;
+    background: #f7f1e3;
+    font-family: 'nunito', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    color: #555555;
+    padding: 0 50px;
+}
+
+.navbar>.categories {
+    margin-right: auto;
+    position: relative;
+    right: -400px;
+}
+
+.navbar>.categories>ul>li {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'nunito', sans-serif;
+}
+
+.navbar>.categories>ul>li>a {
+    text-decoration: none;
+    color: #555555;
+    transition: 0.4s color;
+}
+
+.navbar>.categories>ul>li>a:hover {
+    color: #c0342f;
+}
+
+.navbar>.menu-icon {
+    margin-right: -15px;
+    font-size: 20px;
+}
+
+/* Dropdown konteyner */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'nunito', sans-serif;
+}
+
+/* Dropdown butonu */
+.dropdown i {
+    color: #2c3e50;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s color;
+}
+
+.dropdown i:hover {
+    color: #c0342f;
+}
+
+/* Dropdown içeriği */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 95px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriği bağlantıları */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Bağlantıların üzerine gelinceki stil */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Dropdown içeriği gösteren sınıf */
+.show {
+    display: block;
+}
+
+
+
+/*-------------------------------------Footer----------------------------------------------*/
+
+footer {
+    width: auto;
+    height: 30vh;
+    background: #f7f1e3;
+}
+
+/*Contact Us*/
+
+.contact_us_container {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'nunito', sans-serif;
+    color: #2c3e50;
+}
+
+.login-form {
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.login-form .logo {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="text"],
+.login-form input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form textarea {
+    width: calc(100% - 20px);
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #5a54d6;
+}
+
+.image-section {
+    display: none;
+}
+
+.social-media-icons {
+    padding-top: 30px;
+}
+
+#icon-container {
+    margin-top: 30px;
+}
+
+#x-twitter {
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s color;
+}
+
+#x-twitter:hover {
+    color: #5a54d6;
+}
+
+#instagram {
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s color;
+}
+
+#email {
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s color;
+}
+
+@media (min-width: 768px) {
+    .image-section {
+        display: block;
+        flex: 1;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*Faq*/
+
+.faq-container {
+    margin: auto;
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'nunito', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 0;
+}
+
+.faq:last-child {
+    border-bottom: none;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h2 {
+    font-size: 18px;
+    margin: 0;
+    flex: 1;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.answer p {
+    margin: 0;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .question h2 {
+        font-size: 16px;
+    }
+
+    .toggle-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .question h2 {
+        font-size: 14px;
+    }
+
+    .toggle-icon {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıkça Sorduklarınız | Remora Teknoloji</title>
+    <link rel="stylesheet" href="/css/style.css"> <!--Css-->
+    <link rel="shortcut icon" href="/mediaFiles/logoLight.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!--Font-->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/html/homepage.html"><img src="/mediaFiles/logo.png" alt="logo"></a>
+        </div>
+        <div class="categories">
+            <ul>
+                <li><a href="/html/about_us.html">Hakkımızda</a></li>
+                <li><a href="">Ürünler</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/html/contact_us.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <i class="fa-solid fa-bars" class="dropbtn" onclick="toggleDropdown()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="/html/about_us.html">Hakkımızda</a>
+                <a href="#">Ürünler</a>
+                <a href="#">Blog</a>
+                <a href="/html/contact_us.html">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="faq-container">
+        <h1>Sıkça Sorduklarınız</h1>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Remora Teknoloji Nasıl Kuruldu?</h2>
+                <span class="toggle-icon">-</span>
+            </div>
+            <div class="answer">
+                <p>TEKNOFEST, Savunma Sanayii Başkanlığı ve uluslararası insansız su altı sistemleri yarışmalarında
+                    ikincilikler elde ettik. Denizcilik sektöründeki tecrübeli mühendislik kadrosu ile ihtiyaç duyulan
+                    ürünleri yerlileştirip, dışa bağımlılığı azaltmak amacıyla KOSGEB desteği alarak Remora’yı kurduk.
+                    Ar-Ge şubemizi de Teknopark İstanbul Cube Incubation’da açtık. Çevre dostu bir hareket ile
+                    çıktığımız bu yolda, doğadan ilham aldık. Remora balığı, hem adımız hem de ilham kaynağımız oldu.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Remora Ne Üretiyor?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>İnsansız su altı robotik sistemler üreten bir teknoloji firmasıyız. Ar-Ge yaparak, denizcilik
+                    sektörüne yeni ürünler kazandırıyoruz. Ticarileşen ilk ürünümüz; insansız uzaktan kontrol edilebilen
+                    yüzey temizleme robotu Remora RT-01. Farklı boyutlardaki yüzer araçlarda, yat ve tekne gövdelerinde,
+                    kekamoz ve lezden oluşan tabakayı temizleyen yüksek teknolojili robotik bir sistem</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Lez Tabakasının Yol Açtığı Sorunlar Neler?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>Yüzer araçlar suya indiği andan itibaren yüzeylerinde mikroorganiz-malar oluşmaya başlar. Bu oluşumun
+                    süresi suyun temizliğine ve iklime göre değişir. Karinası lez ile kaplanan yat ve teknelerin hızı,
+                    haftalar içerisinde yaklaşık yüzde 20 oranında azalır, yakıt sarfiyatları artar ve manevra
+                    kabiliyetleri düşer. Motor zorlandığı için zararlı siyah duman çıkarır. Lez temizlenmez ise kısa
+                    sürede karinada, yani gövdenin su altında kalan kısmında kekamoz dediğimiz midyelenme başlar. Bu
+                    nedenle temizlenmesi için karaya çıkarılması zorunlu hale gelir.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Klasik Karina Temizliği Nasıl Yapılır?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>Yat ve tekneler, suya indirilmeden önce gövde yüzeylerine anti-fouling denilen zehirli boya
+                    uygulanıp, kekamozların yüzeyde üremesi geciktirilir. Sektörde geleneksel olarak karaya yani havuza
+                    çıkarma ve su altı dalgıç temizliği olarak iki farklı yöntem var. Dalgıçların raspa ve hidrolik
+                    fırçalarla yaptığı temizlik yüzeye zarar verip, lez ve kekamoz oluşumunu hızlandırır. Karina
+                    bölgelerinin temizliği, teknenin yüzde 90’lık kısmını oluşturduğu için dalgıçların en çok zamanını
+                    alan kısımdır.
+                    <br><br>
+                    Karina ve pervanelerin yüksek basınçlı su jeti ile temizlendiği, karaya çıkarma yöntemi; çok kirli
+                    yüzeylerde yıllık bakım için tercih edilse de oldukça maliyetli bir yöntemdir. Bu yöntem, marinada
+                    sıra beklenmesine ve bekleme maliyetlerine yol açar.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Remora RT-01 Nasıl Temizliyor?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>Farklı yüzey kirliliklerine göre uygun modüler fırça sistemleri ve filtre haznesinin uluslararası
+                    patent başvuruları yapılan Remora RT-01, karina temizliğinde kaliteli çözüm sağlıyor. Hassas fırça
+                    sistemi ile yüzeyi temizliyor, anti-fouling boyaya zarar vermiyor, emdiği parçaları filtre
+                    haznesinde topluyor. 16 metrelik bir yatı mobil uygulama üzerinden görüntü ve kontrol takibi
+                    sağlayarak, yaklaşık 1 saat içerisinde temizliyor.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Hangi Kurumlardan Destek Aldınız?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>Firmamızı KOSGEB Ar–Ge İnovasyon Destek Programı kapsamında kurduk ve ardından TÜBİTAK BİGG 1512
+                    desteğini de kazanıp, Ar-Ge faaliyetlerimizi hızlandırdık. Kocaeli’ndeki merkezimizi 2021’de,
+                    Teknopark İstanbul’daki şubemizi ise 2022 başında açtık. Çatısı altında bulunmanın büyük
+                    avantajlarını yaşamaya devam ettiğimiz Teknopark İstanbul; mentorluk destekleri, B2B görüşmeleri ve
+                    patent başvuru sürecimizde en büyük destekçimiz oldu.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Tüm Dünya'ya İhracatınız Var Mı?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <p>“Tekne ve yat denemelerimizi başarıyla tamamladık. Önümüzdeki ay, iç piyasada ticari ürün satışına
+                    başlıyoruz. Birleşik Arap Emirlikleri (BAE) ve AB ülkelerinden gelen tekliflerle birlikte ihracat
+                    potansiyelimizi genişletiyoruz. Başta söz konusu ülkeler olmak üzere tüm dünyaya yerli ve milli
+                    ürünümüzü ihraç etmeyi hedefliyoruz.”</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Avantajları Nelerdir?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li>30 metre kablo uzunluğu ile çok yönlü temizlik.</li>
+                    <li>Kiralama ve satın alma opsiyonları.</li>
+                    <li>7/24 görev yapabilme imkanı.</li>
+                    <li>Düşük maliyetli bakım ve yedek parça çözümü.</li>
+                    <li>Filtre sistemi ile AB standardında temizlik.</li>
+                    <li>Mobil uygulama üzerinden kolay kullanım.</li>
+                    <li>Anlık full HD görüntü takibi ile kesintisiz kontrol.</li>
+                    <li>Video kaydını sosyal medyadan paylaşabilme.</li>
+                    <li>Hızlı ve yüzeye zarar vermeyen fırça sistemi.</li>
+                    <li>Yüzey kirliliğine göre hız kontrolü.</li>
+                    <li>Anti-fouling katmana zarar vermeden temizlik imkanı.</li>
+                    <li>Karaya çıkarma sürecini geciktirme.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/javaScript/script.js"></script>
+</body>
+
+</html>

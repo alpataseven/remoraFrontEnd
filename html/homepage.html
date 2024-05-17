@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homepage.css"> <!--Css-->
+    <link rel="stylesheet" href="/css/slider.css"> <!--Css-->
+    <link rel="shortcut icon" href="/mediaFiles/logoLight.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!--Font-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <title>Remora Teknoloji</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/html/homepage.html"><img src="/mediaFiles/logo.png" alt="logo"></a>
+            </div>
+            <div class="categories">
+                <ul>
+                    <li><a href="/html/about_us.html">Hakkımızda</a></li>
+                    <li><a href="">Ürünler</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="/html/contact_us.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="stripe"></div>
+
+        <div class="robot">
+            <img src="/mediaFiles/neta.png" class="neta1" alt="neta">
+        </div>
+
+        <div class="small-robot">
+            <li><img src="/mediaFiles/neta.png" alt="" onclick="imgSlider('/mediaFiles/neta.png')"></li>
+            <li><img src="/mediaFiles/neta2.png" alt="" onclick="imgSlider('/mediaFiles/neta2.png')"></li>
+        </div>
+
+        <div class="text">
+            <h1>
+                <span class="header">Derin dünyanın temiz teknolojisi</span>
+            </h1>
+            <h2>Neta Pro</h2>
+        </div>
+
+        <!--<div class="btn">
+            <button id="button">Tanıtım Videosu</button>
+        </div>
+
+        <div id="iframeContainer"></div>-->
+        <div class="btn"><button id="openVideoBtn">Tanıtım Videosu</button></div>
+
+        <div id="overlay"></div>
+        <div id="videoContainer">
+            <button id="closeVideoBtn">&times;</button>
+            <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <main>
+        <h1>Teknik Özellikler</h1>
+    </main>
+
+    <aside>
+        <h1>Referanslarımız</h1>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/6-qnd6eb1jlbr62o5npbthtlrl9biwrgaqz8z4n838og.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/8-qnd6edv25tv11i1k8v1dj31z1h50ejlxzmxl31z25s.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/2-1-qnd6e6ccn5kqgmchgrscz4yaae62oys3alpp8ua7jk.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/7-qnd6ebzds5sgea4aju84e3j1upe9z5ehbdmm4i1ui8.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/4-1-qnd6e95v7nolfg8e0b08om8o2js6c23aazo5oo610w.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/Adsiz-tasarim-3-1-qnd6mcju2arhekh4qsyl5kpk7zvym882r1wogg5zg0.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/12-qnd6eik9401gnjuqhf2idjva0ehuh14loa70hfs3ao.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/11-qnd6egokqbyw0bxgse998kcctmr41mx500w1ivuvn4.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/10-qnd6efqqjhxlopytxvumo2kw88vqtxtenw8k1lw9tc.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/9-qnd6eeswcnwbd4073dg03ktfmv0dm8pobrl2kbxnzk.png"
+                        height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://www.remora.com.tr/wp-content/uploads/elementor/thumbs/5-qnd6ea3pehpvr270utev9404nxnjjr70n4bn5y4muo.png"
+                        height="100" width="100" alt="" />
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+
+    </footer>
+
+    <script src=src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> <!--Gsap-->
+    <script src="/javaScript/script.js"></script> <!--Script File-->
+</body>
+
+</html>

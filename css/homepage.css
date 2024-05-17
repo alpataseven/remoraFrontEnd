@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    width: auto;
+    height: 100vh;
+    background: #f7f1e3;
+    font-family: 'nunito', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    color: #555555;
+    padding: 0 50px;
+}
+
+.navbar>.categories {
+    margin-right: auto;
+    position: relative;
+    right: -400px;
+}
+
+.navbar>.categories>ul>li {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar>.categories>ul>li>a {
+    text-decoration: none;
+    color: #555555;
+    transition: 0.4s color;
+}
+
+.navbar>.categories>ul>li>a:hover {
+    color: #c0342f;
+}
+
+.navbar>.menu-icon {
+    margin-right: -10px;
+    font-size: 20px;
+}
+
+.stripe {
+    position: absolute;
+    height: 70px;
+    margin-top: 290px;
+    background: linear-gradient(to right, #ee4540, #c0342f);
+}
+
+.robot {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 30%;
+    z-index: 1;
+}
+
+.robot>img {
+    transform: translate(-50%, -170%);
+    max-height: 450px;
+}
+
+.small-robot {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 340px;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1;
+}
+
+.small-robot>li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 -5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 100px;
+}
+
+.small-robot>li:hover {
+    transform: translateY(-10px);
+}
+
+.small-robot>li>img {
+    max-width: 120px;
+}
+
+.text {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+
+.text>h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #555555;
+    margin-bottom: 20px;
+    position: relative;
+    height: 150px;
+    width: 900px;
+}
+
+.text>h1>.header {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 60px;
+}
+
+.text h2 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 200px;
+    color: #f4f2ec;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 33%;
+}
+
+.btn > button {
+    
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 260px;
+    margin-right: -57px;
+    width: 170px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: #c0342f;
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 4px;
+    transition: .4s;
+    font-family: 'nunito', sans-serif;;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: #000;
+    color: #fff;
+}
+
+#videoContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+}
+
+#closeVideoBtn {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
+
+#closeVideoBtn:hover {
+    color: #c0342f;
+}
+
+/*-------------------------------------Main----------------------------------------------*/
+
+main {
+    width: auto;
+    height: 768px;
+    background-color: #f7f1e3;
+}
+
+main > h1 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'nunito', sans-serif;
+}
+
+/*-------------------------------------Aside----------------------------------------------*/
+
+aside {
+    width: auto;
+    height: 50vh;
+    background: #f7f1e3;
+  }
+  
+  aside > h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
