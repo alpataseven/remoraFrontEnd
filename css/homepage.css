@@ -25,7 +25,7 @@ header {
 .navbar>.categories {
     margin-right: auto;
     position: relative;
-    right: -400px;
+    right: -30%;
 }
 
 .navbar>.categories>ul>li {
@@ -62,7 +62,7 @@ header {
 .robot {
     position: absolute;
     margin-top: 50%;
-    margin-left: 30%;
+    margin-left: 25%;
     z-index: 1;
 }
 
@@ -135,8 +135,8 @@ header {
     margin-top: 33%;
 }
 
-.btn > button {
-    
+.btn>button {
+
     position: relative;
     text-decoration: none;
     margin-bottom: 260px;
@@ -151,7 +151,8 @@ header {
     padding: 9px 15px;
     border-radius: 4px;
     transition: .4s;
-    font-family: 'nunito', sans-serif;;
+    font-family: 'nunito', sans-serif;
+    ;
     cursor: pointer;
 }
 
@@ -205,10 +206,18 @@ main {
     background-color: #f7f1e3;
 }
 
-main > h1 {
+main>h1 {
+    color: #000;
+    text-transform: uppercase;
     text-align: center;
     padding-top: 15px;
     font-family: 'nunito', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 /*-------------------------------------Aside----------------------------------------------*/
@@ -216,10 +225,121 @@ main > h1 {
 aside {
     width: auto;
     height: 50vh;
+    padding: 150px;
     background: #f7f1e3;
-  }
-  
-  aside > h1 {
+}
+
+aside>h1 {
+    color: #000;
+    text-transform: uppercase;
     text-align: center;
-    padding-top: 15px;
-  }
+    padding-top: 0.1px;
+    padding-bottom: 30px;
+    font-family: 'nunito', sans-serif;
+}
+
+/*-------------------------------------Footer----------------------------------------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 10px;
+    grid-template-areas:
+        "img information socialmedia"
+        "img information socialmedia";
+    width: auto;
+    height: 45vh;
+    background-color: #c0342f;
+}
+
+.grid-one {
+    margin: auto;
+    grid-area: img;
+}
+
+.grid-one > img {
+    width: 250px;
+    height: 96px;
+}
+
+.grid-two {
+    margin: auto;
+    grid-area: information;
+    font-family: 'nunito', sans-serif;
+}
+
+.grid-two > h2 {
+    text-align: center;
+    color: #f4f2ec;
+
+}
+
+.grid-two > ul > li {
+    list-style: none;
+    font-family: 'nunito', sans-serif;
+    padding: 10px;
+    color: #f4f2ec;
+}
+
+.grid-two > ul > li > a {
+    text-decoration: none;
+    color: #f4f2ec;
+} 
+
+.grid-two > ul > li > i {
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #f4f2ec;
+    transition: 0.4s color;
+}
+
+.grid-two > ul > li > i:hover {
+    color: #003f84;
+}
+
+#social-media {
+    background-color: #c0342f;
+    width: auto;
+    height: 25vh;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 30px; /* Boşluk artırıldı */
+}
+
+.footer-links a {
+    font-family: 'nunito', sans-serif;
+    margin: 0 15px;
+    color: #f4f2ec;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.4s color;
+    gap: 15px;
+}
+
+.footer-links a:hover {
+    color: #003f84;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #f4f2ec;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s color;
+}
+
+.footer-social a:hover {
+    color: #003f84;
+}
+
+.footer-copy {
+    font-family: 'nunito', sans-serif;
+    color: #f4f2ec;
+    font-size: 14px;
+    margin-top: 30px;
+}
+

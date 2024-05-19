@@ -101,7 +101,20 @@ header {
     display: block;
 }
 
+/* Responsive stil */
+@media screen and (max-width: 768px) {
+    .categories {
+        display: none;
+    }
 
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+}
 
 /*-------------------------------------Footer----------------------------------------------*/
 
